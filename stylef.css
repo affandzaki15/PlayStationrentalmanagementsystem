@@ -1,0 +1,170 @@
+/* Reset CSS */
+body, h1, p, a, nav, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000; /* Background hitam */
+    color: white; /* Warna teks putih */
+    line-height: 1.6;
+}
+
+/* Navbar Styling dengan Background */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #31302f; /* Background gelap untuk navigasi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Efek bayangan pada navbar */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigasi */
+.menu {
+    display: flex;
+    gap: 40px; /* Jarak antar navigasi */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ccc; /* Warna teks awal */
+    font-weight: 500;
+    padding: 10px 15px; /* Padding untuk background */
+    border-radius: 5px; /* Membuat sudut melengkung */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #e98635; /* Warna hover */
+    color: #000; /* Teks hitam saat hover */
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.logout-button {
+    padding: 5px 10px;
+    background-color: #f44336; /* Warna merah */
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Main Content Styling */
+.main-content {
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Foto Grid Styling */
+.foto-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Grid dengan 3 kolom */
+    gap: 20px; /* Jarak antar item */
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.foto-item {
+    text-align: center;
+    overflow: hidden; /* Potong bagian yang melampaui bingkai */
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Tambahkan efek transisi */
+}
+
+.foto-item img {
+    width: 100%;
+    height: 210px; /* Tinggi gambar sama */
+    object-fit: cover; /* Gambar dipotong agar sesuai */
+    border-radius: 10px; /* Sudut gambar melengkung */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Efek transisi */
+}
+
+.foto-item img:hover {
+    transform: scale(1.05); /* Zoom-in saat hover */
+    filter: brightness(1.2); /* Efek kecerahan pada hover */
+}
+
+.foto-item p {
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Efek bayangan teks */
+}
+
+
+/* Footer Styling */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    border-top: 2px solid #444;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .kontak img {
+    width: 20px;
+    height: 20px;
+}
